@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site com Cartões</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b2341;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            background-color: #102f55;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cartao {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 160px;
+      }
+
+		    #cartao1 {
+  	      background-color:#0AC3E8;
+          color:#230946;
+      }
+
+      #cartao2 {
+  	      background-color:#0F063C;
+          color:#FF00FF;
+      }
+
+      #cartao3 {
+  	      background-color:#00FF00;
+          color:#A81818;
+      }
+
+      #cartao4 {
+  	      background-color:#10296F;
+          color:#FF0000;
+      }
+
+      #cartao5 {
+  	      background-color:#FFFB00;
+          color:#962727;
+      }
+
+      #cartao6 {
+  	      background-color:#5D0DFF;
+          color:#AEF607;
+      }
+
+      #cartao7 {
+  	      background-color:#5601FF;
+          color:#F55607;
+      }
+
+      #cartao8 {
+  	      background-color:#F2FF00;
+          color:#863030;
+      }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        /* Quando a tela ficar menor, organiza em 2 colunas */
+        @media (max-width: 850px) {
+            .cartoes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site de citações</h1>
+        <p>Exemplo de página semântica com cartões</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <div class="cartoes">
+
+            <div class="cartao" id="cartao1">
+                <h2>Platão</h2>
+                <p>
+                    "Quem comete uma injustiça é sempre mais infeliz que o injustiçado."
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao2">
+                <h2>Socrátes</h2>
+                <p>
+"Sábio é aquele que conhece os limites da própria ignorância."
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao3">
+                <h2>Nikola tesla</h2>
+                <p>
+                    "O que um homem chama de Deus, outro chama de leis da física."
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao4">
+                <h2>René descartes</h2>
+                <p>
+                    "Penso, logo existo."
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao5">
+                <h2>Clarice Lispector </h2>
+                <p>
+                    "Enquanto eu tiver perguntas e não houver resposta continuarei a escrever."
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao6">
+                <h2>Friedrich Nietzsche</h2>
+                <p>
+                   "Não há fatos eternos, como não há verdades absolutas."
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao7">
+                <h2>William Shakespeare</h2>
+                <p>
+                    "Lutar pelo amor é bom, mas alcançá-lo sem luta é melhor."
+                </p>
+            </div>
+
+          <div class="cartao" id="cartao8">
+                <h2>Leonardo da Vinci</h2>
+                <p>
+                    "Quem não estima a vida não a merece."
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Nicolas Santos</p>
+    </footer>
+
+</body>
+</html>
+
+
